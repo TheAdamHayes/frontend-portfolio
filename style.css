@@ -4,6 +4,7 @@
   font-family: Tahoma, sans-serif;
   margin: 0; 
   padding: 0;
+  border: 1px solid white;
 }
 
 /* Navbar Styles */
@@ -53,7 +54,7 @@
 }
 
 /* Name and Photo Section */
-.name_and_photo {
+.name-and-photo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +69,7 @@
   text-align: center;
 }
 
-.changing_text {
+.changing-text {
   color: #9D4EDD;
   white-space: pre-wrap;
   word-break: break-word;
@@ -76,7 +77,7 @@
   width: 300px;
 }
 
-.circle_background {
+.circle-background {
   position: relative;
   width: 300px;
   height: 300px;
@@ -112,8 +113,10 @@
 /* Project List */
 .project-list {
   display: flex;
-  width: 100%;
+  width: 80%;
   flex-flow: row;
+  justify-content: space-evenly;
+  margin: auto;
 }
 
 .project {
@@ -186,7 +189,7 @@
 }
 
 /* Tools Used */
-.tools_used {
+.tools-used {
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
@@ -195,7 +198,7 @@
   padding: 42px;
 }
 
-#above_tools {
+#above-tools {
   margin-top: 32px;
 }
 
@@ -205,7 +208,7 @@
 }
 
 /* Project Body */
-.project_body {
+.project-body {
   width: 80%;
   padding: 32px;
   display: flex;
@@ -213,7 +216,7 @@
   gap: 32px;
 }
 
-.project_description {
+.project-description {
   width: 80%;
   padding: 32px;
   color: #E0AAFF;
@@ -222,14 +225,21 @@
 
 .project-image-container {
   width: 33%;
+  max-width: 33%;
   padding: 32px;
 }
 
 .project-image {
   border-radius: 8px;
   max-width: 100%;
-  transform: scale(2);
+  height: auto;
   margin-top: 72px;
+  transform: scale(1.5);
+}
+
+.project-image:hover {
+  transform: scale(1.6);
+  transition: all 0.25s;
 }
 
 .cta-button {
@@ -245,14 +255,14 @@
   font-weight: 600;
   line-height: 1.25;
   margin-top: 24px;
-  margin-left: 64px;
   min-height: 3rem;
   padding: 16px;
   position: relative;
   transition: all 250ms;
   vertical-align: baseline;
   width: auto;
-  overflow: hidden; 
+  overflow: hidden;
+  justify-content: center;
 }
 
 /* Shine Effect */
@@ -296,7 +306,7 @@ a {
 }
 
 /* Website Project Body */
-#website_project_body {
+#website-project-body {
   width: 90%;
 }
 
