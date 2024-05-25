@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="index.js" defer></script>
+  <script src="https://kit.fontawesome.com/d05e8eb795.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#landing-page" class="underline">HOME</a></li>
+      <li><a href="#about" class="underline">ABOUT ME</a></li>
+      <li><a href="#work" class="underline">PROJECTS</a></li>
+    </ul>
+  </nav>
+
+  <!-- SVG PATH TO CLIP PHOTO IMAGE -->
+  <svg width="0" height="0" id="clip-path">
+    <defs>
+      <clipPath id="photo-mask">
+        <rect width="200" height="1000" y="-900" />
+        <circle cx="150" cy="230" r="150" />
+      </clipPath>
+    </defs>
+  </svg>
+
+  <!-- LANDING PAGE -->
+  <section id="landing-page">
+    <div class="name_and_photo hidden">
+      <div class="circle_background">
+        <img class="photo" src="https://i.imgur.com/IsrEmnP.png" alt="Photo">
+      </div>
+      <div class="name">I am&nbsp;<span class="changing_text">an ambitious front-end developer.</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about" class="hidden">
+    <h2 class="title">About Me</h2>
+    <p class="text">Hello! 👋 I'm Adam. <br> <br> I'm an ambitious front end developer out of Liverpool, UK and my goal is to provide clean, functional, and simple UI/UX for the web. <br> <br> Did you know I also enjoy <span id="music"><a href="https://www.youtube.com/@adam_hayes">making music and stories?</a></span></p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="work" class="hidden">
+    <h2 id="projects" class="title">Projects</h2>
+    <div class="project-list">
+      
+      <!-- CHORD GENERATOR-->
+      <div class="project">
+        <h3 class="title">Chord Generator</h3>
+        <h4 class="subtitle">A tool to jump start your next track...</h4>
+        
+        <div class="h-divider" id="above_tools"></div>
+        
+        <div class="tools_used">
+          <i class="fa-brands fa-html5 tool" alt="html5 icon"></i>
+          <i class="fa-brands fa-css3-alt tool" alt="Vanilla CSS3 icon"></i>
+          <i class="fa-brands fa-js tool" alt="JS icon"></i>
+        </div>
+        
+        <div class="h-divider"></div>
+        
+        <div class="project_body">
+          <div class="project_description">
+            <p>I've noticed when creating music the hardest part is the <b>getting started</b> and so I use this to help me get some quick inspiration for my next track. <br><br>This chord generator lets you <b>automatically generate, play, and download MIDI all in the browser</b> so that you can start your next track within minutes and avoid staring at a blank canvas. </p>
+            
+            <!-- TO DO: ADD LINK IN DEPLOYMENT -->
+            <button class="cta-button shine">Try it now...</button>
+            
+          </div>
+          <div class="project-image-container">
+            <img class="image project-image" alt="Chord Generator Screenshot" src="https://i.imgur.com/anJANC3.png" id="chord_generator_image"></img>
+          </div>
+        </div>
+      </div>
+    
+      <!-- WEBSITE -->
+      <div class="project">
+        <h3 class="title">Portfolio</h3>
+        <h4 class="subtitle">A platform to show what I can do...</h4>
+        
+        <div class="h-divider" id="above_tools"></div>
+        
+        <div class="tools_used">
+          <i class="fa-brands fa-html5 tool" alt="html5 icon"></i>
+          <i class="fa-brands fa-css3-alt tool" alt="Vanilla CSS3 icon"></i>
+          <i class="fa-brands fa-js tool" alt="JS icon"></i>
+        </div>
+        
+        <div class="h-divider"></div>
+        
+        <div class="project_body" id="website_project_body">
+          <div class="project_description">
+            <p>This website was coded by me! 👋 <br> <br> I put special care into ensuring basic functionality with vanilla CSS, HTML and Javascript to create an impressive website to show off what I can do for you. <br> <br>I have self taught these languages and my focus was on creating a simple website with a strong purple colour scheme from <span id="coolors.co"><a href="https://coolors.co/palette/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff">coolors.co</a></span></p>
+          </div>
+        
+        </div>
+    
+    </div>
+  </section>
+
+</body>
+
+</html>
